@@ -1,0 +1,47 @@
+
+/*Esse é o style que se deve aplicar pra fontes baixadas*/
+        @font-face {
+            font-family:'amor';
+            src: url('fontes/Hurry Loves.otf') format('truetype');
+            font-weight:normal;
+            font-style:normal;
+        }
+            @font-face {
+            font-family:'love';
+            src: url('fontes/love story ttf.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            
+            
+
+
+            }
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: left;
+            }
+            h1{
+                text-align: center;
+                font-family: 'amor', Times, serif;
+                font-size: 10m;
+                font-weight: normal;
+                color: #ca2929cb;
+
+                
+            /*Tipos de Format
+                -opentype(otf)
+                -truetype(ttf)
+                -embedded-opentype
+                truetype(Apple advanced Typography)
+                -sgv*/
+                
+                
+        }
+
+        p{
+            text-align: justify;
+        }
+        h2{
+            font-family:'love', Times, serif ;
+            text-align: right;
+        }

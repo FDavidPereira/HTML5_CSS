@@ -1,0 +1,36 @@
+@charset "UTF-8";
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #5C7E8D;
+}
+
+#principal{
+    color: white;
+    background: #2C5769;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 40px;
+
+}
+
+.secundario{
+    color: #A3B7C0;
+    text-align: center;
+
+}
+
+.curso{
+    color: #163949;
+    text-align: right;
+}
+
+p{
+    text-align: justify;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: normal;
+}
+
+.destaque{
+    background-color: yellow;
+}
+
