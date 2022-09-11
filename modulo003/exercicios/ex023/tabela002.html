@@ -13,6 +13,18 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        .num{
+            text-align: right;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
         }
 
         td, th{
@@ -21,8 +33,18 @@
         }
 
         thead, tfoot{
-            background-color: gray;
+            background-color: #383838;
             color: white;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
         }
     </style>
 </head>
@@ -32,6 +54,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
             TABLE
+                CAPTION
                 THEAD
                     TR, TD, TH
                 TBODY
@@ -41,31 +64,100 @@
     -->
     
     <table>
+        <caption>Populaçâo das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>Populaçâo</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">Populaçâo</th>
             </tr>
         </thead>
         
         <tbody>
             <tr>
                 <td>São Paulo</td>
-                <td>45919049</td>
+                <td class="num">45919049</td>
             </tr>
             <tr>
                 <td>Minas Gerais</td>
-                <td>21168791</td>
+                <td class="num">21168791</td>
             </tr>
             <tr>
                 <td>Rio de Janeiro</td>
-                <td>17264943</td>
+                <td class="num">17264943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14873064</td>
+            </tr>
+            <tr>
+                <td>Parana</td>
+                <td class="num">11493197</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11377239</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9557701</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9132778</td>
+            </tr>
+            <tr>
+                <td>Para</td>
+                <td class="num">8602845</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7164788</td>
+            </tr>
+            <tr>
+                <td>Maranão</td>
+                <td class="num">7075181</td>
+            </tr>
+            <tr>
+                <td>Goias</td>
+                <td class="num">7018354</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4144597</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td class="num">4018560</td>
+            </tr>
+            <tr>
+                <td>Paraiba</td>
+                <td class="num">4018127</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3506853</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3484466</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3337357</td>
+            </tr>
+            <tr>
+                <td>Piaui</td>
+                <td class="num">3273227</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">3015268</td>
             </tr>
         </tbody>
 
         <tfoot>
-            <th>Total de Habitantes</th>
-            <td>0000</td>
+            <th scope="row">Total de Habitantes</th>
+            <td class="num">0000</td>
         </tfoot>
     </table>
 </body>
